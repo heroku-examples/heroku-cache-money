@@ -1,0 +1,8 @@
+Test out cache-money on Heroku
+
+$ heroku create --stack bamboo
+$ git push heroku master
+$ heroku addons:add memcache
+$ heroku rake db:migrate
+
+go to appurl/users and try creating a user
