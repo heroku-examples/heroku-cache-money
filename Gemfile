@@ -4,6 +4,7 @@ gem 'cache-money'
 gem 'memcached'
 
 group :development do
+  gem 'memcache-client', :require => 'MemCache'
 	gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
