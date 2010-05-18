@@ -1,7 +1,7 @@
 require 'cache_money'
 
 if RAILS_ENV == "production"
-  $memcache = Memcached.new
+  $memcache = Memcached::Rails.new
 else
   $memcache = MemCache.new 'localhost:11211'
 end
