@@ -1,7 +1,7 @@
 source :gemcutter
 
 gem 'rails', '~> 2.3.5', :require => nil
-gem 'ashleym1972-cache-money'
+gem 'ngmoco-cache-money', :require => 'cache-money'
 
 group :development do
   gem 'memcache-client', :require => 'MemCache'
@@ -10,5 +10,5 @@ end
 
 group :production do
   gem 'pg'
-  gem 'memcached'
+  gem 'memcached-northscale'
 end
