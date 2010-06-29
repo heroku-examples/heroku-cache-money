@@ -1,7 +1,7 @@
 source :gemcutter
 
 gem 'rails', '2.3.5', :require => nil
-gem 'ngmoco-cache-money', :require => 'cache-money'
+gem 'cache-money'
 
 group :development do
   gem 'memcache-client', :require => 'MemCache'
