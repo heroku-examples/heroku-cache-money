@@ -1,3 +1,5 @@
+NOTE: THIS ISN'T WORKING RIGHT NOW.  WORKING WITH NORTHSCALE TO GET WORKING
+
 Test out cache-money on Heroku
 
 $ heroku create --stack bamboo
