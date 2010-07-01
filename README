@@ -7,3 +7,21 @@ $ heroku rake db:migrate
 $ heroku restart
 
 go to appurl/users and try creating a user
+
+Example here: http://heroku-cache-money.heroku.com
+
+Log samples:
+
+Processing UsersController#show (for 69.163.187.152 at 2010-07-01 11:25:00) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://heroku-cache-money.heroku.com/users/1]
+
+#=> Flush memcache
+
+Processsing UsersController#show (for 69.163.187.152 at 2010-07-01 11:33:15) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 15ms (View: 1, DB: 11) | 200 OK [http://heroku-cache-money.heroku.com/users/1]
