@@ -1,0 +1,137 @@
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-28 17:58:29) [GET]
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: users: SELECT * FROM "users" ):
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/query/select.rb:5:in `__send__'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/query/select.rb:5:in `find_every_without_cache'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/query/select.rb:12:in `uncacheable'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/query/abstract.rb:21:in `perform'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/query/abstract.rb:7:in `perform'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/finders.rb:24:in `find_every'
+  app/controllers/users_controller.rb:5:in `index'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-28 17:59:04) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-28 17:59:10) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-28 17:59:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"DugBmcQJiyO3E0pMJmIUERg4d6WYoSlDjKL26RqQCOc=", "user"=>{"name"=>"test", "age"=>"1"}}
+
+NameError (undefined local variable or method `opts' for #<Memcached::Rails:0x1042f4c48>):
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/memcached-northscale-0.19.5.2/lib/memcached/rails.rb:88:in `add'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/lock.rb:28:in `acquire_lock'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/lock.rb:26:in `times'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/lock.rb:26:in `acquire_lock'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/buffered.rb:73:in `flush'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/buffered.rb:72:in `each'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/buffered.rb:72:in `flush'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cash/transactional.rb:19:in `transaction'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@blank/gems/cache-money-0.2.5/lib/cache_money.rb:51:in `transaction'
+  app/controllers/users_controller.rb:46
+  app/controllers/users_controller.rb:45:in `create'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-30 16:59:31) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 36ms (View: 32, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-30 16:59:32) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-30 16:59:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"/q2+4CE9fcqS76O6gr+dZSIO133W+k51yA8GujAuKVc=", "user"=>{"name"=>"work", "age"=>"44"}}
+
+Memcached::ServerIsMarkedDead (Key {"lock/User:1/id/2"=>"127.0.0.1:11211:8"}):
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/memcached-northscale-0.19.5.2/lib/memcached/memcached.rb:604:in `check_return_code'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/memcached-northscale-0.19.5.2/lib/memcached/memcached.rb:329:in `add'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/memcached-northscale-0.19.5.2/lib/memcached/rails.rb:86:in `add'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/lock.rb:28:in `acquire_lock'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/lock.rb:26:in `times'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/lock.rb:26:in `acquire_lock'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/buffered.rb:73:in `flush'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/buffered.rb:72:in `each'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/buffered.rb:72:in `flush'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/transactional.rb:19:in `transaction'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cache_money.rb:51:in `transaction'
+  app/controllers/users_controller.rb:46
+  app/controllers/users_controller.rb:45:in `create'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-30 16:59:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"/q2+4CE9fcqS76O6gr+dZSIO133W+k51yA8GujAuKVc=", "user"=>{"name"=>"work", "age"=>"44"}}
+
+NameError (undefined local variable or method `opts' for #<Memcached::Rails:0x105abc588>):
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/memcached-northscale-0.19.5.2/lib/memcached/rails.rb:88:in `add'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/lock.rb:28:in `acquire_lock'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/lock.rb:26:in `times'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/lock.rb:26:in `acquire_lock'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/buffered.rb:73:in `flush'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/buffered.rb:72:in `each'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/buffered.rb:72:in `flush'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cash/transactional.rb:19:in `transaction'
+  /Users/oren/.rvm/gems/ruby-1.8.7-p249@rails2/gems/cache-money-0.2.5/lib/cache_money.rb:51:in `transaction'
+  app/controllers/users_controller.rb:46
+  app/controllers/users_controller.rb:45:in `create'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/oren/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
