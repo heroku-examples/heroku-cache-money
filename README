@@ -2,7 +2,7 @@ Sample app using cache-money on Heroku
 
 $ heroku create --stack bamboo
 $ git push heroku master
-$ heroku addons:add memcache
+$ heroku addons:add memcache:5mb
 $ heroku rake db:migrate
 $ heroku restart
 
